@@ -1,0 +1,56 @@
+<!Doctype html5>
+<html>
+<!-- <html lang = "en"> defines the language of the webpage, useful for browsers -->
+    <head>
+            <title>My first web page</title>
+
+            <!-- using external style sheet -->
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+
+            <!-- CSS for div, style is defined within head tag(internal/embedded) -->
+            <style> 
+                .myDiv { /*define style for a class*/
+                  border: 5px outset red;  /*border color*/
+                  background-color: lightblue; /*background color*/
+                  text-align: center;
+                }
+            </style>
+    </head>
+    <body>
+
+        <header>  
+            <h2 style="text-align: center;">Header - My First Web Page</h2>  
+            <!-- Navigation bar -->
+            <nav>
+                <a href="index1.html" >Basics</a> |
+                <a href="tables-and-lists.html" >Tables and Lists</a> |
+            </nav>
+        </header> 
+
+        <!-- hr inserts a horizontal line -->
+        <hr>
+
+        <!-- Block level styling, using a class to define the element. See inside <head> tags to see embedded css-->
+        <div class="myDiv">
+            <h2>This is a heading inside a div element</h2>
+            <p>This a paragraph inside  a div element.<p>
+        </div>
+
+        <!-- Span tag can be used for inline styling (ex-change the colour of the part of a text), Different ways to define text colors -->
+        <p>My mother has <span style="color:blue;font-weight:bold">blue</span> eyes and   
+            my father has <span style="color:rgb(0,255,0);font-weight:bold"> green</span> eyes.</p>
+
+        <!-- With CSS, an id can be used to define the element -->
+        <span id="span-0">This text is inside a span element. Styles has been applied using an external style sheet</span> 
+
+        <!-- pre preserves spaces, line breaks -->
+        <pre>
+            Trying out pre tag
+                Trying out pre tag
+        </pre>
+
+        
+        
+         
+    </body>
+</html>
